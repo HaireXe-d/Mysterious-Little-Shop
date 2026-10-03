@@ -1,0 +1,11 @@
+{
+  "name": "涛哥的神秘小店",
+  "short_name": "涛哥小店",
+  "icons": [
+    { "src": "./favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" },
+    { "src": "./app-icon-green.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
+  ],
+  "theme_color": "#1F4A39",
+  "background_color": "#F5F0E7",
+  "display": "standalone"
+}
