@@ -1,0 +1,544 @@
+/* ========== 毕业专区页 07.css ========== */
+
+.entry {
+  display: block;
+}
+
+/* 导航激活：毕业专区（第8个） */
+.header li:nth-child(8) a {
+  color: #488165;
+  border-bottom: 4px solid #488165;
+}
+
+/* g1 面包屑 */
+.entry .g1 {
+  width: 1835px;
+  margin: 14px auto 0;
+}
+
+.entry .g1 p {
+  font-size: 15px;
+  color: #6b6557;
+  margin-left: 10px;
+}
+
+.entry .g1 p i {
+  vertical-align: middle;
+  font-size: 22px;
+  margin-right: 10px;
+}
+
+/* g2 hero 主视觉（左图右文卡片） */
+.entry .g2 {
+  width: 1835px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 70px;
+  border: 1px solid #e7e0cd;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  position: relative;
+}
+
+.entry .g2:hover {
+  transform: translateY(-10px);
+  transition: all .2s;
+}
+
+/* hero 左侧主图 + 邮戳 */
+.entry .g2 .g2-left {
+  flex: 0 0 720px;
+  width: 720px;
+  position: relative;
+}
+
+.entry .g2 .g2-left img {
+  width: 100%;
+  display: block;
+}
+
+.entry .g2 .g2-left .stamp {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 14px;
+  font-weight: 700;
+  color: #488165;
+  line-height: 1.35;
+  text-align: center;
+  padding: 12px 16px;
+  border: 2.5px solid #488165;
+  border-radius: 50%;
+  width: 92px;
+  height: 92px;
+  transform: rotate(12deg);
+  opacity: .75;
+  pointer-events: none;
+}
+
+/* hero 右侧信息 */
+.entry .g2 .g2-right {
+  flex: 1;
+  min-width: 0;
+  padding-left: 40px;
+}
+
+.entry .g2 .g2-head {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+
+/* 楷体手写大标题 */
+.entry .g2 .g2-title {
+  font-family: 'Kaiti', '楷体', 'STKaiti', cursive;
+  font-size: 56px;
+  font-weight: 700;
+  color: #2f3a34;
+  letter-spacing: 4px;
+  line-height: 1.1;
+  position: relative;
+  display: inline-block;
+}
+
+/* 标题下绿色手绘下划线 */
+.entry .g2 .g2-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 100%;
+  height: 7px;
+  background: linear-gradient(90deg, rgba(72, 129, 101, .9), rgba(72, 129, 101, .55));
+  border-radius: 4px;
+  transform: skewX(-6deg);
+}
+
+/* 标题旁胶囊标签 */
+.entry .g2 .badge {
+  flex: 0 0 auto;
+  font-size: 15px;
+  color: #488165;
+  background: #e7f0ea;
+  border: 1.5px solid #b9d2c5;
+  border-radius: 999px;
+  padding: 8px 20px;
+  white-space: nowrap;
+  margin-top: 6px;
+}
+
+.entry .g2 .g2-sub {
+  font-size: 20px;
+  color: #5c564a;
+  margin-top: 22px;
+  letter-spacing: 2px;
+}
+
+/* 4个特性（圆形小图标） */
+.entry .g2 .g2-feat {
+  display: flex;
+  gap: 34px;
+  margin-top: 28px;
+}
+
+.entry .g2 .g2-feat li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 17px;
+  color: #3a3a33;
+}
+
+.entry .g2 .g2-feat li .ico {
+  width: 40px;
+  height: 40px;
+  border: 1.5px solid #b9d2c5;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.entry .g2 .g2-feat li .ico img {
+  filter: invert(44%) sepia(28%) saturate(420%) hue-rotate(102deg) brightness(92%) contrast(88%);
+}
+
+/* 收费价格条 */
+.entry .g2 .g2-pricebar {
+  display: inline-flex;
+  align-items: center;
+  gap: 30px;
+  background: #f3eddf;
+  border: 1px solid #e7e0cd;
+  border-radius: 16px;
+  padding: 14px 30px;
+  margin-top: 30px;
+}
+
+.entry .g2 .g2-pricebar .price {
+  font-size: 17px;
+  color: #5c564a;
+  white-space: nowrap;
+}
+
+.entry .g2 .g2-pricebar .price .rmb {
+  font-size: 20px;
+  color: #e13c13;
+  font-weight: 700;
+  margin-left: 12px;
+}
+
+.entry .g2 .g2-pricebar .price .n {
+  font-size: 42px;
+  color: #e13c13;
+  font-weight: 800;
+}
+
+.entry .g2 .g2-pricebar .price .qi {
+  font-size: 16px;
+  color: #8a8474;
+  margin-left: 4px;
+}
+
+.entry .g2 .g2-pricebar .fee {
+  font-size: 14px;
+  color: #6b6557;
+  background: #fff;
+  border: 1px dashed #c9bd9f;
+  border-radius: 999px;
+  padding: 6px 16px;
+  white-space: nowrap;
+}
+
+/* 两个操作按钮 */
+.entry .g2 .g2-btns {
+  display: flex;
+  gap: 22px;
+  margin-top: 28px;
+}
+
+.entry .g2 .g2-btns .btn {
+  width: 200px;
+  height: 54px;
+  border-radius: 12px;
+  font-size: 19px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.entry .g2 .g2-btns .btn.sell {
+  background: #488165;
+  color: #fff;
+}
+
+.entry .g2 .g2-btns .btn.sell:hover {
+  background: #3a6b53;
+  transform: translateY(-2px);
+}
+
+.entry .g2 .g2-btns .btn.record {
+  background: #fff;
+  color: #488165;
+  border: 2px solid #488165;
+}
+
+.entry .g2 .g2-btns .btn.record:hover {
+  background: #e7f0ea;
+  transform: translateY(-2px);
+}
+
+.entry .g2 .g2-note {
+  margin-top: 22px;
+  font-size: 15px;
+  color: #9a9486;
+}
+
+.entry .g2 .g2-note b {
+  color: #488165;
+  font-weight: 700;
+}
+
+/* 通用区块标题（绿色短下划线） */
+.entry .g3 .g3-title,
+.entry .g4 .g4-title,
+.entry .g6 .g6-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #2f3a34;
+  position: relative;
+  padding-bottom: 12px;
+  margin-left: 6px;
+}
+
+.entry .g3 .g3-title::after,
+.entry .g4 .g4-title::after,
+.entry .g6 .g6-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 64px;
+  height: 4px;
+  border-radius: 2px;
+  background: #488165;
+}
+
+/* g3 代售流程 */
+.entry .g3 {
+  width: 1835px;
+  margin: 36px auto 0;
+  padding: 0 10px;
+}
+
+.entry .g3 .g3-list {
+  margin-top: 26px;
+  background: #fff;
+  border: 1px solid #e5e0d3;
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  padding: 34px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+.entry .g3 .g3-step {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 12px 8px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: background .25s;
+}
+
+.entry .g3 .g3-step:hover {
+  background: #faf7ef;
+}
+
+.entry .g3 .g3-step .pic {
+  flex: 0 0 104px;
+  width: 104px;
+  height: 104px;
+  border-radius: 50%;
+  background: #faf7ef;
+  border: 1.5px solid #e7e0cd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .25s;
+}
+
+.entry .g3 .g3-step .pic img {
+  width: 72px;
+  height: 72px;
+  object-fit: contain;
+}
+
+.entry .g3 .g3-step:hover .pic {
+  border-color: #488165;
+  background: #e7f0ea;
+}
+
+/* 第3步激活态：绿色描边圆 */
+.entry .g3 .g3-step.on .pic {
+  border: 2px solid #488165;
+  background: #e7f0ea;
+}
+
+.entry .g3 .g3-step h4 {
+  font-size: 19px;
+  font-weight: 700;
+  color: #333;
+  white-space: nowrap;
+}
+
+.entry .g3 .g3-step p {
+  font-size: 14px;
+  color: #9a9486;
+  line-height: 1.7;
+  margin-top: 6px;
+}
+
+.entry .g3 .g3-arrow {
+  flex: 0 0 auto;
+}
+
+.entry .g3 .g3-arrow img {
+  filter: invert(44%) sepia(28%) saturate(420%) hue-rotate(102deg) brightness(92%) contrast(88%);
+}
+
+/* g4 热门代售品类 */
+.entry .g4 {
+  width: 1835px;
+  margin: 36px auto 0;
+  padding: 0 10px;
+}
+
+.entry .g4 .g4-list {
+  margin-top: 26px;
+  background: #fff;
+  border: 1px solid #e5e0d3;
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  padding: 30px 20px;
+  display: flex;
+  align-items: center;
+}
+
+.entry .g4 .g4-cat {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 14px 8px;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all .25s;
+}
+
+.entry .g4 .g4-cat+.g4-cat {
+  border-left: 1px dashed #d5cfbe;
+}
+
+.entry .g4 .g4-cat:hover {
+  background: #faf7ef;
+  transform: translateY(-4px);
+}
+
+.entry .g4 .g4-cat .pic {
+  flex: 0 0 110px;
+  width: 110px;
+  height: 110px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.entry .g4 .g4-cat .pic img {
+  max-width: 110px;
+  max-height: 110px;
+  object-fit: contain;
+}
+
+.entry .g4 .g4-cat h4 {
+  font-size: 19px;
+  font-weight: 700;
+  color: #3a3a33;
+  white-space: nowrap;
+}
+
+.entry .g4 .g4-cat p {
+  font-size: 14px;
+  color: #9a9486;
+  margin-top: 8px;
+  white-space: nowrap;
+}
+
+/* g5 代售保障条 */
+.entry .g5 {
+  width: 1835px;
+  margin: 36px auto 0;
+  background: #f3eddf;
+  border: 1px solid #e7e0cd;
+  border-radius: 20px;
+  padding: 28px 50px;
+}
+
+.entry .g5 .g5-list {
+  display: flex;
+  align-items: center;
+}
+
+.entry .g5 .g5-item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.entry .g5 .g5-item+.g5-item {
+  border-left: 1px dashed #cfc8b4;
+}
+
+.entry .g5 .g5-item img {
+  flex: 0 0 auto;
+  filter: invert(44%) sepia(28%) saturate(420%) hue-rotate(102deg) brightness(92%) contrast(88%);
+}
+
+.entry .g5 .g5-item .txt h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #3a3a33;
+  margin-bottom: 6px;
+}
+
+.entry .g5 .g5-item .txt p {
+  font-size: 14px;
+  color: #9a9486;
+  line-height: 1.7;
+}
+
+/* g6 寄卖须知 */
+.entry .g6 {
+  width: 1835px;
+  margin: 36px auto 60px;
+  padding: 0 10px;
+}
+
+.entry .g6 .g6-list {
+  margin-top: 26px;
+  display: flex;
+  gap: 26px;
+}
+
+.entry .g6 .g6-card {
+  flex: 1;
+  background: #fff;
+  border: 1px solid #e5e0d3;
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+  padding: 30px 32px;
+  transition: all .25s;
+}
+
+.entry .g6 .g6-card:hover {
+  transform: translateY(-5px);
+  border-color: #488165;
+  box-shadow: 0 12px 26px rgba(72, 129, 101, .16);
+}
+
+.entry .g6 .g6-card .no {
+  font-family: 'Kaiti', '楷体', 'STKaiti', cursive;
+  font-size: 40px;
+  font-weight: 700;
+  color: #488165;
+  opacity: .35;
+}
+
+.entry .g6 .g6-card h4 {
+  font-size: 21px;
+  font-weight: 700;
+  color: #2f3a34;
+  margin-top: 10px;
+}
+
+.entry .g6 .g6-card p {
+  font-size: 15px;
+  color: #6b6557;
+  line-height: 1.9;
+  margin-top: 12px;
+}

@@ -1,0 +1,317 @@
+/* ========== 数码维修页 04.css ========== */
+
+/* 导航激活：数码维修（第5个） */
+.header li:nth-child(5) a {
+  color: #488165;
+  border-bottom: 4px solid #488165;
+}
+
+/* g1 面包屑 */
+.entry .g1 {
+  width: 1835px;
+  margin: 14px auto 0;
+}
+
+.entry .g1 p {
+  font-size: 15px;
+  color: #6b6557;
+  margin-left: 10px;
+}
+
+.entry .g1 p i {
+  vertical-align: middle;
+  font-size: 22px;
+  margin-right: 10px;
+}
+
+/* g2 hero 主视觉（无卡片，直接浮在米色底上） */
+.entry .g2 {
+  width: 1835px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 60px 10px;
+  border: 1px solid #e7e0cd;
+  overflow: hidden;
+  border-radius: 16px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+
+}
+
+.entry .g2:hover {
+  transform: translateY(-10px);
+  transition: all .2s;
+}
+
+.entry .g2 .g2-left {
+  flex: 1;
+  min-width: 0;
+}
+
+.entry .g2 .g2-title {
+  display: block;
+  width: 680px;
+}
+
+/* 服务标签 */
+.entry .g2 .g2-tags {
+  margin-top: 26px;
+}
+
+.entry .g2 .g2-tags .tl {
+  font-size: 18px;
+  font-weight: 700;
+  color: #3a3a33;
+  margin-bottom: 16px;
+}
+
+.entry .g2 .g2-tags .chips {
+  display: flex;
+  gap: 14px;
+}
+
+.entry .g2 .g2-tags .chips li {
+  border: 1.5px solid #d5cfbe;
+  border-radius: 999px;
+  padding: 9px 26px;
+  font-size: 16px;
+  color: #5c564a;
+  background: rgba(255, 255, 255, .55);
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.entry .g2 .g2-tags .chips li:hover {
+  border-color: #488165;
+  color: #488165;
+}
+
+.entry .g2 .g2-tags .chips li.on {
+  background: #488165;
+  border-color: #488165;
+  color: #fff;
+  font-weight: 700;
+}
+
+/* 预约价格条 */
+.entry .g2 .g2-book {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  margin-top: 30px;
+}
+
+.entry .g2 .g2-pricebar {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  background: #f3eddf;
+  border: 1px solid #e7e0cd;
+  border-radius: 16px;
+  padding: 14px 30px;
+}
+
+.entry .g2 .g2-pricebar .price {
+  font-size: 17px;
+  color: #5c564a;
+  white-space: nowrap;
+}
+
+.entry .g2 .g2-pricebar .price .rmb {
+  font-size: 20px;
+  color: #e13c13;
+  font-weight: 700;
+  margin-left: 10px;
+}
+
+.entry .g2 .g2-pricebar .price .n {
+  font-size: 42px;
+  color: #e13c13;
+  font-weight: 800;
+}
+
+.entry .g2 .g2-pricebar .price .qi {
+  font-size: 16px;
+  color: #8a8474;
+  margin-left: 4px;
+}
+
+.entry .g2 .g2-pricebar .order {
+  background: #488165;
+  color: #fff;
+  font-size: 19px;
+  font-weight: 700;
+  border-radius: 12px;
+  padding: 15px 38px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: background .2s;
+}
+
+.entry .g2 .g2-pricebar .order:hover {
+  background: #3a6b53;
+}
+
+.entry .g2 .g2-pricebar .order img {
+  filter: brightness(0) invert(1);
+}
+
+.entry .g2 .g2-book .fav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1.5px solid #cfc8b4;
+  border-radius: 14px;
+  padding: 16px 26px;
+  font-size: 16px;
+  color: #6b6557;
+  background: rgba(255, 255, 255, .35);
+  cursor: pointer;
+  transition: all .2s;
+}
+
+.entry .g2 .g2-book .fav:hover {
+  border-color: #488165;
+  color: #488165;
+}
+
+/* hero 右侧主图 */
+.entry .g2 .g2-right {
+  flex: 0 0 820px;
+  width: 820px;
+}
+
+.entry .g2 .g2-right img {
+  width: 100%;
+  display: block;
+}
+
+/* g3 服务流程 */
+.entry .g3 {
+  width: 1835px;
+  margin: 36px auto 0;
+  padding: 0 10px;
+}
+
+.entry .g3 .g3-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: #2f3a34;
+  position: relative;
+  padding-bottom: 12px;
+  margin-left: 6px;
+}
+
+.entry .g3 .g3-title::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 64px;
+  height: 4px;
+  border-radius: 2px;
+  background: #488165;
+}
+
+.entry .g3 .g3-list {
+  display: flex;
+  gap: 22px;
+  margin-top: 26px;
+}
+
+.entry .g3 .g3-card {
+  flex: 1;
+  background: #fff;
+  border: 1px solid #e5e0d3;
+  border-radius: 16px;
+  padding: 26px 14px 30px;
+  text-align: center;
+  cursor: pointer;
+  transition: all .25s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+}
+
+.entry .g3 .g3-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 26px rgba(72, 129, 101, .16);
+}
+
+/* 第3张激活态：绿色描边 */
+.entry .g3 .g3-card.on {
+  border: 2px solid #488165;
+  padding: 25px 13px 29px;
+  box-shadow: 0 10px 24px rgba(72, 129, 101, .14);
+}
+
+.entry .g3 .g3-card .pic {
+  height: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.entry .g3 .g3-card .pic img {
+  height: 150px;
+  max-width: 92%;
+}
+
+.entry .g3 .g3-card h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: #333;
+  margin: 14px 0 12px;
+}
+
+.entry .g3 .g3-card p {
+  font-size: 15px;
+  color: #9a9486;
+  line-height: 1.8;
+}
+
+/* g4 服务保障条 */
+.entry .g4 {
+  width: 1835px;
+  margin: 36px auto 50px;
+  background: #f3eddf;
+  border: 1px solid #e7e0cd;
+  border-radius: 20px;
+  padding: 28px 50px;
+}
+
+.entry .g4 .g4-list {
+  display: flex;
+  align-items: center;
+}
+
+.entry .g4 .g4-item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+.entry .g4 .g4-item+.g4-item {
+  border-left: 1px dashed #cfc8b4;
+}
+
+.entry .g4 .g4-item img {
+  flex: 0 0 auto;
+  filter: invert(44%) sepia(28%) saturate(420%) hue-rotate(102deg) brightness(92%) contrast(88%);
+}
+
+.entry .g4 .g4-item .txt h4 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #3a3a33;
+  margin-bottom: 6px;
+}
+
+.entry .g4 .g4-item .txt p {
+  font-size: 14px;
+  color: #9a9486;
+  line-height: 1.7;
+}
